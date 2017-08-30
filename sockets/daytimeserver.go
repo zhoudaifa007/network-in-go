@@ -24,7 +24,7 @@ func main() {
 		if err != nil {
 			continue
 		}
-
+		log.Println("new conn")
 		daytime := time.Now().String()
 		conn.Write([]byte(daytime))
 		conn.Close()
